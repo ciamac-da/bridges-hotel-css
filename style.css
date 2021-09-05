@@ -7,7 +7,10 @@
 body {
     font-family: 'Bebas Neue', cursive;
     line-height: 1.8em;
+    overflow: auto;
+    color: #fff;
 }
+
 
 a {
     color: #333;
@@ -22,12 +25,53 @@ p {
     margin: 10px 0;
 }
 
+.lead {
+    font-size: 30px;
+}
+
+.text-primary {
+    color: rgb(57, 153, 209);
+    padding: 10px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    background-color: rgb(57, 153, 209);
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    text-shadow: 1px 2px 1px #111;
+    transition: .7s;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.btn:hover {
+    color: rgb(57, 153, 209);
+    background: #fff;
+    transition: .7s;
+    text-shadow: 1px 2px 1px #fff;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+.bg-light {
+    color: #333;
+    background-color: #fff;
+}
+.bg-primary {
+    color: rgb(57, 153, 209);
+    background-color: #333;
+}
 /*Utiliy classes*/
 .container {
     margin: auto;
     max-width: 1100px;
     overflow: auto;
-    padding: 0 20px;
 }
 
 #navbar {
@@ -36,6 +80,9 @@ p {
     overflow: auto;
     height: 62px;
     overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 22222;
 }
 
 #navbar a {
@@ -59,6 +106,10 @@ p {
     font-size: 20px;
     padding: 0 20px;
     transition: .7s;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 2px 1px #111;
+    letter-spacing: 3px;
 }
 
 #navbar ul li:hover,
@@ -68,6 +119,10 @@ p {
     color: rgb(57, 153, 209);
     transition: .7s;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 2px 1px #111;
+    letter-spacing: 3px;
 }
 
 
@@ -76,4 +131,47 @@ p {
     text-align: center;
     height: 35px;
     
+}
+
+/*Showcase*/
+#showcase {
+    background: url(./assets/bridges.jpg) no-repeat center center/cover;
+    object-fit: cover;
+    height: 600px;
+    overflow: auto;
+    position: relative;
+    opacity: .9;
+}
+
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+    text-shadow: 2px 2px 2px #111;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+
+#home-info {
+    height: 400px;
+}
+
+#home-info .info-img {
+    width: 50%;
+    float: left;
+    background: url(./assets/samsroom.jpg) no-repeat center center/cover;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
 }
