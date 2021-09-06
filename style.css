@@ -8,7 +8,6 @@ body {
     font-family: 'Bebas Neue', cursive;
     line-height: 1.8em;
     overflow: auto;
-    color: #fff;
 }
 
 
@@ -66,6 +65,10 @@ p {
 .bg-primary {
     color: rgb(57, 153, 209);
     background-color: #333;
+}
+
+.clr {
+    clear: both;
 }
 /*Utiliy classes*/
 .container {
@@ -174,4 +177,29 @@ p {
     text-align: center;
     padding: 50px 30px;
     overflow: hidden;
+}
+
+/* Features */
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(57, 153, 209);
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #111;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+#main-footer {
+
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: #333;
+
 }
